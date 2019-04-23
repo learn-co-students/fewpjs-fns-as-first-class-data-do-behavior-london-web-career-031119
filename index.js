@@ -5,6 +5,21 @@ function handleClick(e) {
   displayMessage(greet(timeString))
 }
 
+
+function greet(string){
+  const hour = parseInt(string, 10)
+  if (hour < 12) return "Good Morning"
+  else if (hour > 17) return "Good Evening"
+  else return "Good Afternoon"
+}
+
+function displayMessage(string){
+
+  document.querySelector('#greeting').textContent = string
+
+
+}
+
 /* End Given Code, don't edit above here...*/
 
 /* Write your implementation of greet() */
