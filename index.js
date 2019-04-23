@@ -19,5 +19,5 @@ function greet(string) {
 }
 
 function displayMessage(string) {
-  document.getElementById("greeting").textContent = string;
+  document.querySelector('#greeting').textContent = string;
 }
